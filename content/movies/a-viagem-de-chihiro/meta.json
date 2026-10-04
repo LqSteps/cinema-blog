@@ -1,0 +1,29 @@
+{
+  "originalTitle": "千と千尋の神隠し (Sen to Chihiro no Kamikakushi)",
+  "year": 2001,
+  "director": "Hayao Miyazaki",
+  "runtime": 125,
+  "rating": 9.5,
+  "publishedAt": "2026-10-01",
+  "palette": [
+    "#0f2a33",
+    "#e07a5f"
+  ],
+  "backdrop": {
+    "src": "/images/a-viagem-de-chihiro.jpg",
+    "card": "/images/a-viagem-de-chihiro-card.jpg",
+    "fromTrailerAt": 49.6
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=fDUFP7EeXLE",
+    "src": "/trailers/a-viagem-de-chihiro.mp4",
+    "poster": "/trailers/a-viagem-de-chihiro.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {
+      "pt": "/subtitles/a-viagem-de-chihiro.pt.vtt",
+      "en": "/subtitles/a-viagem-de-chihiro.en.vtt",
+      "es": "/subtitles/a-viagem-de-chihiro.es.vtt"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "originalTitle": "Cidade de Deus",
+  "year": 2002,
+  "director": "Fernando Meirelles, Kátia Lund",
+  "runtime": 130,
+  "rating": 9.4,
+  "publishedAt": "2026-09-21",
+  "palette": [
+    "#3a1606",
+    "#e8792b"
+  ],
+  "backdrop": {
+    "src": "/images/cidade-de-deus.jpg",
+    "card": "/images/cidade-de-deus-card.jpg",
+    "fromTrailerAt": 41.5
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=dcUOO4Itgmw",
+    "src": "/trailers/cidade-de-deus.mp4",
+    "poster": "/trailers/cidade-de-deus.jpg",
+    "dubs": {},
+    "subtitles": {
+      "pt": "/subtitles/cidade-de-deus.pt.vtt",
+      "en": "/subtitles/cidade-de-deus.en.vtt",
+      "es": "/subtitles/cidade-de-deus.es.vtt"
+    },
+    "originalLanguage": "en"
+  }
+}

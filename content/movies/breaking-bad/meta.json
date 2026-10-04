@@ -1,0 +1,32 @@
+{
+  "kind": "series",
+  "originalTitle": "Breaking Bad",
+  "year": 2008,
+  "yearEnd": 2013,
+  "creator": "Vince Gilligan",
+  "seasons": 5,
+  "runtime": 47,
+  "rating": 9.7,
+  "publishedAt": "2026-10-02",
+  "palette": [
+    "#0f1f12",
+    "#c9b037"
+  ],
+  "backdrop": {
+    "src": "/images/breaking-bad.jpg",
+    "card": "/images/breaking-bad-card.jpg",
+    "fromTrailerAt": 53.5
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=HhesaQXLuRY",
+    "src": "/trailers/breaking-bad.mp4",
+    "poster": "/trailers/breaking-bad.jpg",
+    "dubs": {},
+    "subtitles": {
+      "pt": "/subtitles/breaking-bad.pt.vtt",
+      "en": "/subtitles/breaking-bad.en.vtt",
+      "es": "/subtitles/breaking-bad.es.vtt"
+    },
+    "originalLanguage": "en"
+  }
+}

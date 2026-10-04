@@ -1,0 +1,35 @@
+{
+  "kind": "series",
+  "originalTitle": "Stranger Things",
+  "year": 2016,
+  "yearEnd": 2025,
+  "creator": "Matt Duffer, Ross Duffer",
+  "seasons": 5,
+  "runtime": 60,
+  "rating": 8.8,
+  "publishedAt": "2026-10-03",
+  "palette": [
+    "#1a0508",
+    "#e5383b"
+  ],
+  "backdrop": {
+    "src": "/images/stranger-things.jpg",
+    "card": "/images/stranger-things-card.jpg",
+    "fromTrailerAt": 36.9,
+    "trim": {
+      "bottom": 0.14
+    }
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=b9EkMc79ZSU",
+    "src": "/trailers/stranger-things.mp4",
+    "poster": "/trailers/stranger-things.jpg",
+    "dubs": {},
+    "subtitles": {
+      "pt": "/subtitles/stranger-things.pt.vtt",
+      "en": "/subtitles/stranger-things.en.vtt",
+      "es": "/subtitles/stranger-things.es.vtt"
+    },
+    "originalLanguage": "en"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "originalTitle": "Interstellar",
+  "year": 2014,
+  "director": "Christopher Nolan",
+  "runtime": 169,
+  "rating": 9.1,
+  "publishedAt": "2026-09-28",
+  "palette": [
+    "#0b1d2e",
+    "#d4a24c"
+  ],
+  "backdrop": {
+    "src": "/images/interestelar.jpg",
+    "card": "/images/interestelar-card.jpg",
+    "fromTrailerAt": 113.9
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+    "src": "/trailers/interestelar.mp4",
+    "poster": "/trailers/interestelar.jpg",
+    "originalLanguage": "en-US",
+    "dubs": {
+      "pt": "/trailers/interestelar.pt.mp4",
+      "es": "/trailers/interestelar.es.mp4"
+    },
+    "subtitles": {
+      "pt": "/subtitles/interestelar.pt.vtt",
+      "en": "/subtitles/interestelar.en.vtt",
+      "es": "/subtitles/interestelar.es.vtt"
+    }
+  }
+}

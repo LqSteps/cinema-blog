@@ -1,0 +1,42 @@
+{
+  "kind": "series",
+  "originalTitle": "오징어 게임 (Ojing-eo Geim)",
+  "year": 2021,
+  "yearEnd": 2025,
+  "creator": "Hwang Dong-hyuk",
+  "seasons": 3,
+  "runtime": 55,
+  "rating": 8.9,
+  "publishedAt": "2026-10-04",
+  "palette": [
+    "#08262b",
+    "#ef476f"
+  ],
+  "backdrop": {
+    "src": "/images/round-6.jpg",
+    "card": "/images/round-6-card.jpg",
+    "fromTrailerAt": 45,
+    "trim": {
+      "top": 0.12
+    }
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=oqxAJKy0ii4",
+    "src": "/trailers/round-6.mp4",
+    "poster": "/trailers/round-6.jpg",
+    "dubs": {},
+    "subtitles": {
+      "pt": "/subtitles/round-6.pt.vtt",
+      "es": "/subtitles/round-6.es.vtt"
+    },
+    "originalLanguage": "ko",
+    "skip": {
+      "dubs": [
+        "en"
+      ],
+      "subtitles": [
+        "en"
+      ]
+    }
+  }
+}

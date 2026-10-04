@@ -1,0 +1,29 @@
+{
+  "originalTitle": "The Godfather",
+  "year": 1972,
+  "director": "Francis Ford Coppola",
+  "runtime": 175,
+  "rating": 9.6,
+  "publishedAt": "2026-09-30",
+  "palette": [
+    "#1a0f08",
+    "#b8863b"
+  ],
+  "backdrop": {
+    "src": "/images/o-poderoso-chefao.jpg",
+    "card": "/images/o-poderoso-chefao-card.jpg",
+    "fromTrailerAt": 11.6
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=UaVTIH8mujA",
+    "src": "/trailers/o-poderoso-chefao.mp4",
+    "poster": "/trailers/o-poderoso-chefao.jpg",
+    "dubs": {},
+    "subtitles": {
+      "pt": "/subtitles/o-poderoso-chefao.pt.vtt",
+      "en": "/subtitles/o-poderoso-chefao.en.vtt",
+      "es": "/subtitles/o-poderoso-chefao.es.vtt"
+    },
+    "originalLanguage": "en"
+  }
+}

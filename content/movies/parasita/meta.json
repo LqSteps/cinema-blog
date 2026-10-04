@@ -1,0 +1,36 @@
+{
+  "originalTitle": "기생충 (Gisaengchung)",
+  "year": 2019,
+  "director": "Bong Joon-ho",
+  "runtime": 132,
+  "rating": 9.3,
+  "publishedAt": "2026-09-14",
+  "palette": [
+    "#14231a",
+    "#9fbf6a"
+  ],
+  "backdrop": {
+    "src": "/images/parasita.jpg",
+    "card": "/images/parasita-card.jpg",
+    "fromTrailerAt": 44.8
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=isOGD_7hNIY",
+    "src": "/trailers/parasita.mp4",
+    "poster": "/trailers/parasita.jpg",
+    "skip": {
+      "dubs": [
+        "en"
+      ],
+      "subtitles": [
+        "en"
+      ]
+    },
+    "dubs": {},
+    "originalLanguage": "ko",
+    "subtitles": {
+      "pt": "/subtitles/parasita.pt.vtt",
+      "es": "/subtitles/parasita.es.vtt"
+    }
+  }
+}
