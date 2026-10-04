@@ -7,7 +7,9 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "translate": "tsx scripts/translate.ts",
-    "trailers": "tsx scripts/download-trailers.ts"
+    "trailers": "tsx scripts/download-trailers.ts",
+    "transcribe:setup": "bash scripts/setup-whisper.sh",
+    "transcribe": ".venv-whisper/bin/python scripts/transcribe.py"
   },
   "type": "module",
   "dependencies": {

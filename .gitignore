@@ -6,3 +6,7 @@ next-env.d.ts
 
 # Trailers downloaded for local development (npm run trailers)
 public/trailers
+
+# Whisper environment and subtitle drafts (npm run transcribe)
+.venv-whisper
+drafts
