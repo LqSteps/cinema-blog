@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { isLocale, locales } from "@/lib/i18n";
 import { getMessages } from "@/lib/messages";
@@ -39,6 +40,10 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
+      {/* Ad network tags, which the network asks to be in <head>; ads.txt in public/ authorizes its seller ID. */}
+      <Script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" strategy="beforeInteractive" />
+      <Script defer src="https://onebigmedia.sfo3.cdn.digitaloceanspaces.com/cinephilia.pr.min.js" strategy="beforeInteractive" />
+      <Script defer src="https://onebigmedia.sfo3.cdn.digitaloceanspaces.com/cinephilia.min.js" strategy="beforeInteractive" />
       <body>
         <header className="site-header">
           <div className="wrap site-header-inner">
