@@ -13,6 +13,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "gray-matter": "^4.0.3",
     "hls.js": "^1.7.3",
     "marked": "^18.0.14",

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { isLocale, locales } from "@/lib/i18n";
 import { getMessages } from "@/lib/messages";
@@ -62,6 +63,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             </p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
