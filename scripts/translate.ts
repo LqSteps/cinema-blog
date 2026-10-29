@@ -36,9 +36,9 @@ type Job = { label: string; run: () => Promise<void> | void };
 let client: Anthropic | undefined;
 
 function systemPrompt(locale: Locale) {
-  return `You translate content for Cinefilia, a film review blog, from Brazilian Portuguese into ${languageName(locale)}.
+  return `You translate content for Cinephilia, a film review blog, from Brazilian Portuguese into ${languageName(locale)}.
 
-Write the way a native film critic in that language would: keep the author's tone, rhythm and opinions, but don't translate word for word. Use the title each film was officially released under in markets that speak ${languageName(locale)}; if you don't know one, keep the original title. Leave people's names, the brand name "Cinefilia" and placeholders in curly braces such as {director} unchanged. Keep all Markdown (headings, emphasis, links, paragraph breaks) exactly as in the source.
+Write the way a native film critic in that language would: keep the author's tone, rhythm and opinions, but don't translate word for word. Use the title each film was officially released under in markets that speak ${languageName(locale)}; if you don't know one, keep the original title. Leave people's names, the brand name "Cinephilia" and placeholders in curly braces such as {director} unchanged. Keep all Markdown (headings, emphasis, links, paragraph breaks) exactly as in the source.
 
 The user message is a JSON object. Return the same object with every string value translated and the same keys.`;
 }
