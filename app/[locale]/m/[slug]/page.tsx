@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import MovieCard from "@/components/MovieCard";
 import TrailerPlayer from "@/components/TrailerPlayer";
-import { isLocale, localeNames, locales, type Locale } from "@/lib/i18n";
+import { isLocale, localeForTag, localeNames, locales, type Locale } from "@/lib/i18n";
 import { facts, years } from "@/lib/facts";
 import { format, getMessages } from "@/lib/messages";
 import { getAllMovies, getMovie, getMovieSlugs } from "@/lib/movies";
@@ -42,7 +42,7 @@ export default async function MoviePage({ params }: Props) {
   // original audio with subtitles in their language switched on.
   const { trailer } = movie;
   const trailerSrc = trailer.dubs?.[locale] ?? trailer.src;
-  const audioLanguage = trailer.dubs?.[locale] ? locale : trailer.originalLanguage?.split("-")[0];
+  const audioLanguage = trailer.dubs?.[locale] ? locale : trailer.originalLanguage && localeForTag(trailer.originalLanguage);
   const subtitles = locales
     .filter((l) => trailer.subtitles?.[l])
     .map((l) => ({ src: trailer.subtitles![l]!, lang: l, label: localeNames[l] }));

@@ -6,6 +6,8 @@
 //   npm run translate -- --check   list what is missing or outdated (no API calls)
 //   npm run translate -- --force   retranslate everything
 //   npm run translate -- --stamp   mark existing translations as current (after manual edits)
+//   npm run translate -- interestelar parasita   only these reviews (UI strings are always included)
+//   npm run translate -- --concurrency=8         parallel API requests (default 4)
 
 import crypto from "node:crypto";
 import fs from "node:fs";
@@ -17,15 +19,26 @@ import { locales, sourceLocale, type Locale } from "../lib/i18n";
 const ROOT = process.cwd();
 const MOVIES_DIR = path.join(ROOT, "content", "movies");
 const MESSAGES_DIR = path.join(ROOT, "messages");
-const CONCURRENCY = 4;
-
-const args = new Set(process.argv.slice(2));
+const argv = process.argv.slice(2);
+const args = new Set(argv.filter((arg) => arg.startsWith("--")));
+const onlySlugs = new Set(argv.filter((arg) => !arg.startsWith("--")));
+const CONCURRENCY = Number(argv.find((arg) => arg.startsWith("--concurrency="))?.split("=")[1] ?? 4);
 const mode = args.has("--check") ? "check" : args.has("--stamp") ? "stamp" : "translate";
 const force = args.has("--force");
 
 const targets = locales.filter((locale) => locale !== sourceLocale);
+// Spelled out where the bare language name leaves the script or variant open.
+const languageNames: Partial<Record<Locale, string>> = {
+  "pt-PT": "European Portuguese (as written in Portugal)",
+  zh: "Simplified Chinese (as written in mainland China)",
+  "zh-HK": "Traditional Chinese (as written in Hong Kong)",
+  no: "Norwegian Bokmål",
+  tl: "Filipino (Tagalog)",
+  ms: "Malay (as written in Malaysia)",
+  ar: "Modern Standard Arabic",
+};
 const languageName = (locale: Locale) =>
-  new Intl.DisplayNames(["en"], { type: "language" }).of(locale) ?? locale;
+  languageNames[locale] ?? new Intl.DisplayNames(["en"], { type: "language" }).of(locale) ?? locale;
 
 const hash = (text: string) => crypto.createHash("sha256").update(text).digest("hex").slice(0, 16);
 
@@ -88,6 +101,7 @@ const movieSchema = {
 function movieJobs(): Job[] {
   const jobs: Job[] = [];
   for (const slug of fs.readdirSync(MOVIES_DIR)) {
+    if (onlySlugs.size && !onlySlugs.has(slug)) continue;
     const sourceFile = path.join(MOVIES_DIR, slug, `${sourceLocale}.md`);
     if (!fs.existsSync(sourceFile)) continue;
     const raw = fs.readFileSync(sourceFile, "utf8");

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { isLocale, locales } from "@/lib/i18n";
+import { isLocale, isRtl, locales } from "@/lib/i18n";
 import { getMessages } from "@/lib/messages";
 import "../globals.css";
 
@@ -40,7 +40,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const t = getMessages(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={isRtl(locale) ? "rtl" : "ltr"}>
       {/* Ad network tags, which the network asks to be in <head>; ads.txt in public/ authorizes its seller ID. */}
       <Script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" strategy="beforeInteractive" />
       <Script defer src="https://onebigmedia.sfo3.cdn.digitaloceanspaces.com/cinephilia.pr.min.js" strategy="beforeInteractive" />

@@ -15,6 +15,10 @@
   --radius: 14px;
   --gutter: clamp(16px, 4vw, 32px);
 }
+/* Han characters differ between Chinese, Japanese and Korean fonts: put the page's own first. */
+:root:lang(zh) { --cjk: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Hiragino Sans GB"; }
+:root:lang(zh-HK) { --cjk: "PingFang HK", "PingFang TC", "Microsoft JhengHei", "Noto Sans CJK HK", "Noto Sans CJK TC"; }
+:root:lang(ja) { --cjk: "Hiragino Sans", "Yu Gothic", "Noto Sans CJK JP"; }
 
 * { box-sizing: border-box; }
 
@@ -62,7 +66,7 @@ img, video { max-width: 100%; display: block; }
   color: var(--muted); background: var(--surface);
 }
 .lang:focus-within { border-color: var(--accent); color: var(--text); }
-.lang select { appearance: none; background: none; border: 0; color: var(--text); font: inherit; font-size: .9rem; cursor: pointer; padding-right: 2px; }
+.lang select { appearance: none; background: none; border: 0; color: var(--text); font: inherit; font-size: .9rem; cursor: pointer; padding-inline-end: 2px; }
 .lang select:focus { outline: none; }
 .lang option { background: var(--surface); }
 
@@ -143,8 +147,8 @@ img, video { max-width: 100%; display: block; }
   position: absolute; top: 12px; font-size: .78rem; font-weight: 600;
   padding: 3px 9px; border-radius: 999px; background: rgb(0 0 0 / .45);
 }
-.card-year { left: 12px; }
-.card-score { right: 12px; color: var(--accent); }
+.card-year { inset-inline-start: 12px; }
+.card-score { inset-inline-end: 12px; color: var(--accent); }
 .card-body { padding: 18px 20px 22px; display: flex; flex-direction: column; flex: 1; }
 .card-genres { margin: 0 0 6px; font-size: .8rem; color: var(--muted); }
 .card-title { margin: 0 0 8px; font: 600 1.3rem/1.2 var(--serif); }
@@ -203,16 +207,20 @@ img, video { max-width: 100%; display: block; }
 
 .article { max-width: 880px; padding-top: 40px; }
 .article-meta { color: var(--muted); font-size: .9rem; margin: 0 0 28px; }
-.notice { padding: 12px 16px; border-radius: 10px; background: var(--surface-2); border-left: 3px solid var(--accent); color: var(--muted); font-size: .92rem; }
+.notice { padding: 12px 16px; border-radius: 10px; background: var(--surface-2); border-inline-start: 3px solid var(--accent); color: var(--muted); font-size: .92rem; }
 
 .prose { max-width: 68ch; font: 400 1.16rem/1.75 var(--serif); }
 .prose p { margin: 0 0 1.25em; }
 .prose > p:first-child::first-letter {
-  float: left; font-size: 3.4em; line-height: .85; padding: .06em .1em 0 0; color: var(--accent); font-weight: 600;
+  float: inline-start; font-size: 3.4em; line-height: .85; padding: .06em 0 0; padding-inline-end: .1em; color: var(--accent); font-weight: 600;
+}
+/* Drop caps break joined scripts (Arabic) and look wrong without capital letters. */
+.prose:is(:lang(ar), :lang(he), :lang(hi), :lang(mr), :lang(ta), :lang(te), :lang(ml), :lang(th), :lang(zh), :lang(ja), :lang(ko)) > p:first-child::first-letter {
+  float: none; font-size: inherit; line-height: inherit; padding: 0; color: inherit; font-weight: inherit;
 }
 .prose h2 { font: 600 1.55rem/1.25 var(--serif); margin: 2em 0 .6em; }
 .prose a { color: var(--accent); }
-.prose blockquote { margin: 1.5em 0; padding-left: 1em; border-left: 3px solid var(--accent); color: var(--muted); font-style: italic; }
+.prose blockquote { margin: 1.5em 0; padding-inline-start: 1em; border-inline-start: 3px solid var(--accent); color: var(--muted); font-style: italic; }
 
 .trailer { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
 .trailer h2 { font: 600 2rem/1.1 var(--serif); margin: 0 0 8px; }

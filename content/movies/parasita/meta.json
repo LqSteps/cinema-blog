@@ -26,7 +26,9 @@
         "en"
       ]
     },
-    "dubs": {},
+    "dubs": {
+      "id": "/trailers/parasita.id.mp4"
+    },
     "originalLanguage": "ko",
     "subtitles": {
       "pt": "/subtitles/parasita.pt.vtt",

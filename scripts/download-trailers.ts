@@ -13,11 +13,12 @@
 //
 //   npm run trailers             fetch whatever is missing
 //   npm run trailers -- --force  fetch everything again (hand-made subtitles are kept)
+//   npm run trailers -- interestelar parasita   only these movies
 
 import { execFileSync, spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-import { locales, type Locale } from "../lib/i18n";
+import { localeForTag, locales, type Locale } from "../lib/i18n";
 import type { MovieMeta } from "../lib/movies";
 
 const ROOT = process.cwd();
@@ -26,6 +27,7 @@ const TRAILERS_DIR = path.join(ROOT, "public", "trailers");
 const SUBTITLES_DIR = path.join(ROOT, "public", "subtitles");
 const IMAGES_DIR = path.join(ROOT, "public", "images");
 const force = process.argv.includes("--force");
+const onlySlugs = new Set(process.argv.slice(2).filter((arg) => !arg.startsWith("--")));
 // Point at another build (e.g. one with curl_cffi for browser impersonation) via YT_DLP=/path/to/yt-dlp.
 const YT_DLP = process.env.YT_DLP ?? "yt-dlp";
 
@@ -37,10 +39,17 @@ const VIDEO_SORT = "lang,res,fps,vcodec:vp9,acodec:aac,br";
 type Format = { format_id: string; vcodec?: string; acodec?: string; ext: string; abr?: number; language?: string | null; format_note?: string };
 type Info = { formats: Format[]; subtitles?: Record<string, unknown>; automatic_captions?: Record<string, unknown> };
 
-const base = (lang: string) => lang.toLowerCase().split("-")[0];
+// YouTube tags ("pt-BR", "zh-Hant", "en-orig") mapped onto site locales, same rules as the visitor's browser.
+const localeOf = (lang: string) => localeForTag(lang.replace(/-orig$/, ""));
 
 // MP4 language tags must be ISO 639-2 codes; extend alongside lib/i18n.ts.
-const ISO_639_2: Record<string, string> = { pt: "por", en: "eng", es: "spa", fr: "fra", de: "deu", it: "ita", ko: "kor", ja: "jpn" };
+const ISO_639_2: Record<Locale, string> = {
+  pt: "por", "pt-PT": "por", en: "eng", es: "spa", fr: "fra", de: "deu", it: "ita", nl: "nld", ca: "cat",
+  pl: "pol", cs: "ces", sk: "slk", hu: "hun", uk: "ukr", ru: "rus", kk: "kaz", tr: "tur", el: "ell",
+  he: "heb", ar: "ara", hi: "hin", mr: "mar", ta: "tam", te: "tel", ml: "mal", th: "tha", vi: "vie",
+  id: "ind", ms: "msa", tl: "fil", zh: "zho", "zh-HK": "yue", ja: "jpn", ko: "kor", sv: "swe", no: "nor",
+  da: "dan", fi: "fin",
+};
 
 function ytDlp(args: string[]) {
   const result = spawnSync(YT_DLP, ["--no-playlist", "--quiet", "--no-warnings", ...args], { stdio: "inherit" });
@@ -75,7 +84,7 @@ function fetchDub(slug: string, url: string, locale: Locale, audio: Format) {
       "-i", tmp,
       "-map", "0:v:0", "-map", "1:a:0",
       "-c", "copy",
-      "-metadata:s:a:0", `language=${ISO_639_2[locale] ?? "und"}`,
+      "-metadata:s:a:0", `language=${ISO_639_2[locale]}`,
       "-movflags", "+faststart",
       path.join(TRAILERS_DIR, `${slug}.${locale}.mp4`),
     ]);
@@ -138,7 +147,7 @@ function cleanVtt(vtt: string) {
 function pickSubtitle(info: Info, locale: Locale) {
   const match = (tracks: Record<string, unknown> | undefined) =>
     Object.keys(tracks ?? {})
-      .filter((lang) => base(lang) === locale)
+      .filter((lang) => localeOf(lang) === locale)
       .sort((a, b) => Number(b.endsWith("-orig")) - Number(a.endsWith("-orig")) || a.length - b.length)[0];
   const manual = match(info.subtitles);
   if (manual) return { track: manual, auto: false };
@@ -150,8 +159,12 @@ fs.mkdirSync(TRAILERS_DIR, { recursive: true });
 fs.mkdirSync(SUBTITLES_DIR, { recursive: true });
 fs.mkdirSync(IMAGES_DIR, { recursive: true });
 let failures = 0;
+// After YouTube rate-limits captions (HTTP 429) every further request fails too: stop asking for
+// subtitles this run, but keep fetching videos and dubs. Running again later picks up the rest.
+let subtitlesBlocked = false;
 
 for (const slug of fs.readdirSync(MOVIES_DIR)) {
+  if (onlySlugs.size && !onlySlugs.has(slug)) continue;
   const metaFile = path.join(MOVIES_DIR, slug, "meta.json");
   if (!fs.existsSync(metaFile)) continue;
   const meta = JSON.parse(fs.readFileSync(metaFile, "utf8")) as MovieMeta;
@@ -182,11 +195,11 @@ for (const slug of fs.readdirSync(MOVIES_DIR)) {
 
     const dubs: Partial<Record<Locale, string>> = {};
     for (const locale of locales) {
-      if (original && base(original) === locale) continue;
+      if (original && localeOf(original) === locale) continue;
       if (meta.trailer.skip?.dubs?.includes(locale)) continue;
       // Prefer AAC (m4a) for the widest browser support, then bitrate.
       const audio = audioTracks
-        .filter((f) => f.language && base(f.language) === locale)
+        .filter((f) => f.language && localeOf(f.language) === locale)
         .sort((a, b) => Number(b.ext === "m4a") - Number(a.ext === "m4a") || (b.abr ?? 0) - (a.abr ?? 0))[0];
       if (!audio) continue;
       if (force || !fs.existsSync(path.join(TRAILERS_DIR, `${slug}.${locale}.mp4`))) {
@@ -199,11 +212,17 @@ for (const slug of fs.readdirSync(MOVIES_DIR)) {
     const subtitles: Partial<Record<Locale, string>> = {};
     for (const locale of locales) {
       const file = path.join(SUBTITLES_DIR, `${slug}.${locale}.vtt`);
-      if (!fs.existsSync(file) && !meta.trailer.skip?.subtitles?.includes(locale)) {
+      if (!fs.existsSync(file) && !subtitlesBlocked && !meta.trailer.skip?.subtitles?.includes(locale)) {
         const pick = pickSubtitle(info, locale);
         if (pick) {
           console.log(`↓ ${locale} subtitles (${pick.auto ? "auto" : "manual"}: ${pick.track})`);
-          fetchSubtitle(slug, url, pick.track, pick.auto, locale);
+          try {
+            fetchSubtitle(slug, url, pick.track, pick.auto, locale);
+          } catch (error) {
+            failures++;
+            subtitlesBlocked = true;
+            console.error(`✗ ${slug}: ${locale} subtitles failed, skipping subtitles for the rest of this run`);
+          }
         }
       }
       if (fs.existsSync(file)) subtitles[locale] = `/subtitles/${slug}.${locale}.vtt`;
