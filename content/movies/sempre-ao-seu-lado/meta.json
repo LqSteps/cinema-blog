@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Hachi: A Dog's Tale",
+  "year": 2009,
+  "director": "Lasse Hallström",
+  "runtime": 93,
+  "rating": 8.4,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#1c1712",
+    "#d8b27a"
+  ],
+  "backdrop": {
+    "src": "/images/sempre-ao-seu-lado.jpg",
+    "card": "/images/sempre-ao-seu-lado-card.jpg",
+    "fromTrailerAt": 58.6
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=Y6U7mAnPtw4",
+    "src": "/trailers/sempre-ao-seu-lado.mp4",
+    "poster": "/trailers/sempre-ao-seu-lado.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Home Alone 2: Lost in New York",
+  "year": 1992,
+  "director": "Chris Columbus",
+  "runtime": 120,
+  "rating": 7.2,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#1a0f0f",
+    "#d9483b"
+  ],
+  "backdrop": {
+    "src": "/images/esqueceram-de-mim-2-perdido-em-nova-york.jpg",
+    "card": "/images/esqueceram-de-mim-2-perdido-em-nova-york-card.jpg",
+    "fromTrailerAt": 61.6
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=5h9VDUNtoto",
+    "src": "/trailers/esqueceram-de-mim-2-perdido-em-nova-york.mp4",
+    "poster": "/trailers/esqueceram-de-mim-2-perdido-em-nova-york.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

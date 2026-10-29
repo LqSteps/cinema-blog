@@ -1,0 +1,35 @@
+{
+  "originalTitle": "Deadpool & Wolverine",
+  "year": 2024,
+  "director": "Shawn Levy",
+  "runtime": 128,
+  "rating": 7.4,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#1f0608",
+    "#f2c230"
+  ],
+  "backdrop": {
+    "src": "/images/deadpool-e-wolverine.jpg",
+    "card": "/images/deadpool-e-wolverine-card.jpg",
+    "fromTrailerAt": 35.5
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=73_1biulkYk",
+    "src": "/trailers/deadpool-e-wolverine.mp4",
+    "poster": "/trailers/deadpool-e-wolverine.jpg",
+    "originalLanguage": "en-US",
+    "dubs": {
+      "pt": "/trailers/deadpool-e-wolverine.pt.mp4",
+      "es": "/trailers/deadpool-e-wolverine.es.mp4",
+      "fr": "/trailers/deadpool-e-wolverine.fr.mp4",
+      "de": "/trailers/deadpool-e-wolverine.de.mp4",
+      "it": "/trailers/deadpool-e-wolverine.it.mp4",
+      "hi": "/trailers/deadpool-e-wolverine.hi.mp4",
+      "id": "/trailers/deadpool-e-wolverine.id.mp4"
+    },
+    "subtitles": {
+      "pt": "/subtitles/deadpool-e-wolverine.pt.vtt"
+    }
+  }
+}

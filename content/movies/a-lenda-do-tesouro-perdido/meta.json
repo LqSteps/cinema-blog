@@ -1,0 +1,25 @@
+{
+  "originalTitle": "National Treasure",
+  "year": 2004,
+  "director": "Jon Turteltaub",
+  "runtime": 131,
+  "rating": 7.1,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#1d1609",
+    "#d4af37"
+  ],
+  "backdrop": {
+    "src": "/images/a-lenda-do-tesouro-perdido.jpg",
+    "card": "/images/a-lenda-do-tesouro-perdido-card.jpg",
+    "fromTrailerAt": 84.1
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=vqUPxNT8io4",
+    "src": "/trailers/a-lenda-do-tesouro-perdido.mp4",
+    "poster": "/trailers/a-lenda-do-tesouro-perdido.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

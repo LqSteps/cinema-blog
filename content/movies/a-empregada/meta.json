@@ -1,0 +1,35 @@
+{
+  "originalTitle": "The Housemaid",
+  "year": 2025,
+  "director": "Paul Feig",
+  "runtime": 131,
+  "rating": 7,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#17141a",
+    "#b84a4a"
+  ],
+  "backdrop": {
+    "src": "/images/a-empregada.jpg",
+    "card": "/images/a-empregada-card.jpg",
+    "fromTrailerAt": 27.9
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=48CtX6OgU3s",
+    "src": "/trailers/a-empregada.mp4",
+    "poster": "/trailers/a-empregada.jpg",
+    "originalLanguage": "en-US",
+    "dubs": {
+      "pt": "/trailers/a-empregada.pt.mp4",
+      "es": "/trailers/a-empregada.es.mp4",
+      "fr": "/trailers/a-empregada.fr.mp4",
+      "de": "/trailers/a-empregada.de.mp4",
+      "it": "/trailers/a-empregada.it.mp4",
+      "hi": "/trailers/a-empregada.hi.mp4",
+      "id": "/trailers/a-empregada.id.mp4"
+    },
+    "subtitles": {
+      "en": "/subtitles/a-empregada.en.vtt"
+    }
+  }
+}

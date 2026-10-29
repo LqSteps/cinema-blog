@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Grown Ups",
+  "year": 2010,
+  "director": "Dennis Dugan",
+  "runtime": 102,
+  "rating": 6,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#10241a",
+    "#f2b84b"
+  ],
+  "backdrop": {
+    "src": "/images/gente-grande.jpg",
+    "card": "/images/gente-grande-card.jpg",
+    "fromTrailerAt": 61.4
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=1m-NrYetgOU",
+    "src": "/trailers/gente-grande.mp4",
+    "poster": "/trailers/gente-grande.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

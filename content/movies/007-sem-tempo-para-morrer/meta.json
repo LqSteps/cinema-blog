@@ -1,0 +1,33 @@
+{
+  "originalTitle": "No Time to Die",
+  "year": 2021,
+  "director": "Cary Joji Fukunaga",
+  "runtime": 163,
+  "rating": 7.7,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0b1517",
+    "#6fb8a6"
+  ],
+  "backdrop": {
+    "src": "/images/007-sem-tempo-para-morrer.jpg",
+    "card": "/images/007-sem-tempo-para-morrer-card.jpg",
+    "fromTrailerAt": 120.5
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=BIhNsAtPbPI",
+    "src": "/trailers/007-sem-tempo-para-morrer.mp4",
+    "poster": "/trailers/007-sem-tempo-para-morrer.jpg",
+    "originalLanguage": "en-US",
+    "dubs": {
+      "pt": "/trailers/007-sem-tempo-para-morrer.pt.mp4",
+      "es": "/trailers/007-sem-tempo-para-morrer.es.mp4",
+      "fr": "/trailers/007-sem-tempo-para-morrer.fr.mp4",
+      "de": "/trailers/007-sem-tempo-para-morrer.de.mp4",
+      "it": "/trailers/007-sem-tempo-para-morrer.it.mp4",
+      "hi": "/trailers/007-sem-tempo-para-morrer.hi.mp4",
+      "id": "/trailers/007-sem-tempo-para-morrer.id.mp4"
+    },
+    "subtitles": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Ice Age",
+  "year": 2002,
+  "director": "Chris Wedge, Carlos Saldanha",
+  "runtime": 81,
+  "rating": 7.6,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0e2236",
+    "#8fd3f4"
+  ],
+  "backdrop": {
+    "src": "/images/a-era-do-gelo.jpg",
+    "card": "/images/a-era-do-gelo-card.jpg",
+    "fromTrailerAt": 102.4
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=i4noiCRJRoE",
+    "src": "/trailers/a-era-do-gelo.mp4",
+    "poster": "/trailers/a-era-do-gelo.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

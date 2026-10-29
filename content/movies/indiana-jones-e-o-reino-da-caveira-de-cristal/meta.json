@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Indiana Jones and the Kingdom of the Crystal Skull",
+  "year": 2008,
+  "director": "Steven Spielberg",
+  "runtime": 122,
+  "rating": 6.2,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#22170c",
+    "#d39a4a"
+  ],
+  "backdrop": {
+    "src": "/images/indiana-jones-e-o-reino-da-caveira-de-cristal.jpg",
+    "card": "/images/indiana-jones-e-o-reino-da-caveira-de-cristal-card.jpg",
+    "fromTrailerAt": 35
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=kTJy1rFBtVw",
+    "src": "/trailers/indiana-jones-e-o-reino-da-caveira-de-cristal.mp4",
+    "poster": "/trailers/indiana-jones-e-o-reino-da-caveira-de-cristal.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Fast X",
+  "year": 2023,
+  "director": "Louis Leterrier",
+  "runtime": 141,
+  "rating": 6,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0f0f12",
+    "#e2632f"
+  ],
+  "backdrop": {
+    "src": "/images/velozes-e-furiosos-10.jpg",
+    "card": "/images/velozes-e-furiosos-10-card.jpg",
+    "fromTrailerAt": 103.6
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=1fvzVMmARqY",
+    "src": "/trailers/velozes-e-furiosos-10.mp4",
+    "poster": "/trailers/velozes-e-furiosos-10.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

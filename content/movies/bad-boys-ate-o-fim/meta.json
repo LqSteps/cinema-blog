@@ -1,0 +1,27 @@
+{
+  "originalTitle": "Bad Boys: Ride or Die",
+  "year": 2024,
+  "director": "Adil El Arbi, Bilall Fallah",
+  "runtime": 115,
+  "rating": 6.7,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#140b16",
+    "#f27a3d"
+  ],
+  "backdrop": {
+    "src": "/images/bad-boys-ate-o-fim.jpg",
+    "card": "/images/bad-boys-ate-o-fim-card.jpg",
+    "fromTrailerAt": 116.2
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=hRFY_Fesa9Q",
+    "src": "/trailers/bad-boys-ate-o-fim.mp4",
+    "poster": "/trailers/bad-boys-ate-o-fim.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {
+      "en": "/subtitles/bad-boys-ate-o-fim.en.vtt"
+    }
+  }
+}

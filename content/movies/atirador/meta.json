@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Shooter",
+  "year": 2007,
+  "director": "Antoine Fuqua",
+  "runtime": 124,
+  "rating": 7,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#14170f",
+    "#c58b3c"
+  ],
+  "backdrop": {
+    "src": "/images/atirador.jpg",
+    "card": "/images/atirador-card.jpg",
+    "fromTrailerAt": 29.8
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=A3lPVwYOdzA",
+    "src": "/trailers/atirador.mp4",
+    "poster": "/trailers/atirador.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Casino Royale",
+  "year": 2006,
+  "director": "Martin Campbell",
+  "runtime": 144,
+  "rating": 8.7,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0d1a14",
+    "#c9a94a"
+  ],
+  "backdrop": {
+    "src": "/images/007-cassino-royale.jpg",
+    "card": "/images/007-cassino-royale-card.jpg",
+    "fromTrailerAt": 67.5
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=GV_18deeAXk",
+    "src": "/trailers/007-cassino-royale.mp4",
+    "poster": "/trailers/007-cassino-royale.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

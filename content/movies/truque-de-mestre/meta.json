@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Now You See Me",
+  "year": 2013,
+  "director": "Louis Leterrier",
+  "runtime": 115,
+  "rating": 7.2,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#100c20",
+    "#b48cff"
+  ],
+  "backdrop": {
+    "src": "/images/truque-de-mestre.jpg",
+    "card": "/images/truque-de-mestre-card.jpg",
+    "fromTrailerAt": 27
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=UzdAOW3Rlmw",
+    "src": "/trailers/truque-de-mestre.mp4",
+    "poster": "/trailers/truque-de-mestre.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

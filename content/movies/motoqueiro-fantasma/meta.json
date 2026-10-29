@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Ghost Rider",
+  "year": 2007,
+  "director": "Mark Steven Johnson",
+  "runtime": 110,
+  "rating": 5.3,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#120806",
+    "#ff7a1a"
+  ],
+  "backdrop": {
+    "src": "/images/motoqueiro-fantasma.jpg",
+    "card": "/images/motoqueiro-fantasma-card.jpg",
+    "fromTrailerAt": 27.7
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=nu6R7ypaz5g",
+    "src": "/trailers/motoqueiro-fantasma.mp4",
+    "poster": "/trailers/motoqueiro-fantasma.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

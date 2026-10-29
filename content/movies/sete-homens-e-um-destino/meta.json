@@ -1,0 +1,25 @@
+{
+  "originalTitle": "The Magnificent Seven",
+  "year": 2016,
+  "director": "Antoine Fuqua",
+  "runtime": 133,
+  "rating": 6.9,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#2a160b",
+    "#d98a3a"
+  ],
+  "backdrop": {
+    "src": "/images/sete-homens-e-um-destino.jpg",
+    "card": "/images/sete-homens-e-um-destino-card.jpg",
+    "fromTrailerAt": 26.8
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=FBWT2Vymu4o",
+    "src": "/trailers/sete-homens-e-um-destino.mp4",
+    "poster": "/trailers/sete-homens-e-um-destino.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

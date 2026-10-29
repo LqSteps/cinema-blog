@@ -1,0 +1,30 @@
+{
+  "originalTitle": "The Adam Project",
+  "year": 2022,
+  "director": "Shawn Levy",
+  "runtime": 106,
+  "rating": 6.6,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0b1424",
+    "#57b7e8"
+  ],
+  "backdrop": {
+    "src": "/images/o-projeto-adam.jpg",
+    "card": "/images/o-projeto-adam-card.jpg",
+    "fromTrailerAt": 120.1,
+    "trim": {
+      "bottom": 0.22
+    }
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=IE8HIsIrq4o",
+    "src": "/trailers/o-projeto-adam.mp4",
+    "poster": "/trailers/o-projeto-adam.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {
+      "en": "/subtitles/o-projeto-adam.en.vtt"
+    }
+  }
+}

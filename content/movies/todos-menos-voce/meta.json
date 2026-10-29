@@ -1,0 +1,27 @@
+{
+  "originalTitle": "Anyone But You",
+  "year": 2023,
+  "director": "Will Gluck",
+  "runtime": 103,
+  "rating": 6.5,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0d2333",
+    "#f4a6a0"
+  ],
+  "backdrop": {
+    "src": "/images/todos-menos-voce.jpg",
+    "card": "/images/todos-menos-voce-card.jpg",
+    "fromTrailerAt": 20.2
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=ESEc6W2h9_k",
+    "src": "/trailers/todos-menos-voce.mp4",
+    "poster": "/trailers/todos-menos-voce.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {
+      "en": "/subtitles/todos-menos-voce.en.vtt"
+    }
+  }
+}

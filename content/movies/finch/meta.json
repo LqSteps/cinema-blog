@@ -1,0 +1,35 @@
+{
+  "originalTitle": "Finch",
+  "year": 2021,
+  "director": "Miguel Sapochnik",
+  "runtime": 115,
+  "rating": 7,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#1f1710",
+    "#d79a52"
+  ],
+  "backdrop": {
+    "src": "/images/finch.jpg",
+    "card": "/images/finch-card.jpg",
+    "fromTrailerAt": 32.8
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=oah4GNeFcsw",
+    "src": "/trailers/finch.mp4",
+    "poster": "/trailers/finch.jpg",
+    "originalLanguage": "en-US",
+    "dubs": {
+      "pt": "/trailers/finch.pt.mp4",
+      "es": "/trailers/finch.es.mp4",
+      "fr": "/trailers/finch.fr.mp4",
+      "de": "/trailers/finch.de.mp4",
+      "it": "/trailers/finch.it.mp4",
+      "hi": "/trailers/finch.hi.mp4",
+      "id": "/trailers/finch.id.mp4"
+    },
+    "subtitles": {
+      "pt": "/subtitles/finch.pt.vtt"
+    }
+  }
+}

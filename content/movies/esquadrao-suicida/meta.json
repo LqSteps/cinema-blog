@@ -1,0 +1,27 @@
+{
+  "originalTitle": "Suicide Squad",
+  "year": 2016,
+  "director": "David Ayer",
+  "runtime": 123,
+  "rating": 5.4,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#120d1c",
+    "#e0427f"
+  ],
+  "backdrop": {
+    "src": "/images/esquadrao-suicida.jpg",
+    "card": "/images/esquadrao-suicida-card.jpg",
+    "fromTrailerAt": 169.1
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=SULFiCh0Zsw",
+    "src": "/trailers/esquadrao-suicida.mp4",
+    "poster": "/trailers/esquadrao-suicida.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {
+      "pt": "/subtitles/esquadrao-suicida.pt.vtt"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "originalTitle": "Avengers: Infinity War",
+  "year": 2018,
+  "director": "Anthony Russo, Joe Russo",
+  "runtime": 149,
+  "rating": 8.5,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#120c1e",
+    "#c79a3a"
+  ],
+  "backdrop": {
+    "src": "/images/vingadores-guerra-infinita.jpg",
+    "card": "/images/vingadores-guerra-infinita-card.jpg",
+    "fromTrailerAt": 79.3
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+    "src": "/trailers/vingadores-guerra-infinita.mp4",
+    "poster": "/trailers/vingadores-guerra-infinita.jpg",
+    "originalLanguage": "en-US",
+    "dubs": {
+      "pt": "/trailers/vingadores-guerra-infinita.pt.mp4",
+      "es": "/trailers/vingadores-guerra-infinita.es.mp4",
+      "fr": "/trailers/vingadores-guerra-infinita.fr.mp4",
+      "de": "/trailers/vingadores-guerra-infinita.de.mp4",
+      "it": "/trailers/vingadores-guerra-infinita.it.mp4",
+      "hi": "/trailers/vingadores-guerra-infinita.hi.mp4",
+      "id": "/trailers/vingadores-guerra-infinita.id.mp4"
+    },
+    "subtitles": {}
+  }
+}

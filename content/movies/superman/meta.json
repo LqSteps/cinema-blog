@@ -1,0 +1,33 @@
+{
+  "originalTitle": "Superman",
+  "year": 2025,
+  "director": "James Gunn",
+  "runtime": 129,
+  "rating": 7.6,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0b1530",
+    "#d63a3a"
+  ],
+  "backdrop": {
+    "src": "/images/superman.jpg",
+    "card": "/images/superman-card.jpg",
+    "fromTrailerAt": 101.3
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=Ox8ZLF6cGM0",
+    "src": "/trailers/superman.mp4",
+    "poster": "/trailers/superman.jpg",
+    "originalLanguage": "en-US",
+    "dubs": {
+      "pt": "/trailers/superman.pt.mp4",
+      "es": "/trailers/superman.es.mp4",
+      "fr": "/trailers/superman.fr.mp4",
+      "de": "/trailers/superman.de.mp4",
+      "it": "/trailers/superman.it.mp4",
+      "hi": "/trailers/superman.hi.mp4",
+      "id": "/trailers/superman.id.mp4"
+    },
+    "subtitles": {}
+  }
+}

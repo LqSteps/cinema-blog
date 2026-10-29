@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Venom: The Last Dance",
+  "year": 2024,
+  "director": "Kelly Marcel",
+  "runtime": 109,
+  "rating": 5.5,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#08090c",
+    "#8a9bb0"
+  ],
+  "backdrop": {
+    "src": "/images/venom-a-ultima-rodada.jpg",
+    "card": "/images/venom-a-ultima-rodada-card.jpg",
+    "fromTrailerAt": 70.1
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=aFsGDcy-6hc",
+    "src": "/trailers/venom-a-ultima-rodada.mp4",
+    "poster": "/trailers/venom-a-ultima-rodada.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

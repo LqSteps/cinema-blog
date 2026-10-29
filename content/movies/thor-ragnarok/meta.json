@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Thor: Ragnarok",
+  "year": 2017,
+  "director": "Taika Waititi",
+  "runtime": 130,
+  "rating": 7.9,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#170f24",
+    "#f0a33a"
+  ],
+  "backdrop": {
+    "src": "/images/thor-ragnarok.jpg",
+    "card": "/images/thor-ragnarok-card.jpg",
+    "fromTrailerAt": 102.2
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=ue80QwXMRHg",
+    "src": "/trailers/thor-ragnarok.mp4",
+    "poster": "/trailers/thor-ragnarok.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

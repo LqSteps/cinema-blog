@@ -1,0 +1,27 @@
+{
+  "originalTitle": "Mission: Impossible – The Final Reckoning",
+  "year": 2025,
+  "director": "Christopher McQuarrie",
+  "runtime": 169,
+  "rating": 7.5,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0b1220",
+    "#e8452c"
+  ],
+  "backdrop": {
+    "src": "/images/missao-impossivel-o-acerto-final.jpg",
+    "card": "/images/missao-impossivel-o-acerto-final-card.jpg",
+    "fromTrailerAt": 91.6
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=fsQgc9pCyDU",
+    "src": "/trailers/missao-impossivel-o-acerto-final.mp4",
+    "poster": "/trailers/missao-impossivel-o-acerto-final.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {
+      "en": "/subtitles/missao-impossivel-o-acerto-final.en.vtt"
+    }
+  }
+}

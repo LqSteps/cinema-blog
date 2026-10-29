@@ -1,0 +1,25 @@
+{
+  "originalTitle": "Immaculate",
+  "year": 2024,
+  "director": "Michael Mohan",
+  "runtime": 89,
+  "rating": 6.8,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0e0c0c",
+    "#b8322a"
+  ],
+  "backdrop": {
+    "src": "/images/imaculada.jpg",
+    "card": "/images/imaculada-card.jpg",
+    "fromTrailerAt": 100.2
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=ewxS9Z-XXYo",
+    "src": "/trailers/imaculada.mp4",
+    "poster": "/trailers/imaculada.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}

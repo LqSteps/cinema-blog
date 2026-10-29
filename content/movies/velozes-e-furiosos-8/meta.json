@@ -1,0 +1,25 @@
+{
+  "originalTitle": "The Fate of the Furious",
+  "year": 2017,
+  "director": "F. Gary Gray",
+  "runtime": 136,
+  "rating": 6.2,
+  "publishedAt": "2026-10-28",
+  "palette": [
+    "#0c121a",
+    "#d9b13b"
+  ],
+  "backdrop": {
+    "src": "/images/velozes-e-furiosos-8.jpg",
+    "card": "/images/velozes-e-furiosos-8-card.jpg",
+    "fromTrailerAt": 153.1
+  },
+  "trailer": {
+    "youtube": "https://www.youtube.com/watch?v=uisBaTkQAEs",
+    "src": "/trailers/velozes-e-furiosos-8.mp4",
+    "poster": "/trailers/velozes-e-furiosos-8.jpg",
+    "originalLanguage": "en",
+    "dubs": {},
+    "subtitles": {}
+  }
+}
